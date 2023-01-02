@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/app.css">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js"></script>
+    <title>Viplevel:)</title>
+    <link rel="stylesheet" href="/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('/BG2.jpg');
+            background-size: cover;
+            background-image: no-repeat scroll center scroll;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body class="d-flex flex-column vh-100">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <!-- <a class="navbar-brand" href="/campgrounds">Tour</a> -->
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup"> -->
+            <!-- <div class="navbar-nav">
+                
+            </div> -->
+            <!-- <div class="">
+  
+        </div>
+    </div> -->
+</nav>
+        <img src="logo_5.png" class="logo">
+        <main class="container mt-0 pt-0">
+            
+                
+
+    <div class="row">
+        <div class="col-6 offset-3">
+            <div class="alert alert-danger" role="alert">
+                <h4 class="alert-heading">Please Input credentials </h4>
+            
+                <p> </p> 
+                 
+            </div>
+        </div>
+    </div>
+        </main>
+
+
+        <footer class="footer bg-dark py-3 mt-auto">
+    <div class="container">
+        <span class="text-muted">&copy; Secure Login-System-2022. Developed By  <a style="text-decoration:none;" href="mailto:mohibdrs@gmail.com" target="blank" rel="noreferrer">Mohi007</a> </span>
+    </div>
+</footer>
+            <!-- <script src="/bootstrap.bundle.min.js"></script> -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+                crossorigin="anonymous"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+            <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.min.js"></script>
+            <script>
+                let password = document.getElementById("password");
+                let confirm_password = document.getElementById("confirm_password");
+                
+                function validatePassword(){
+                if(password.value != confirm_password.value) {
+                confirm_password.setCustomValidity("Passwords Don't Match");
+                console.log("Clicked");
+                } else {
+                confirm_password.setCustomValidity('');
+                }
+                }
+                
+                password.onchange = validatePassword;
+                confirm_password.onkeyup = validatePassword;
+                </script>
+</body>
+
+</html>
